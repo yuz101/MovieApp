@@ -16,9 +16,10 @@ struct onBoardingView: View {
             Color.black
                 .ignoresSafeArea()
             TabView{
-                ForEach(movies[0...5]){item in
-                    MovieCardView(movie: item)
+                ForEach(0..<movies.count-1){index in
+                    MovieCardView(movie: movies[index])
                 }//:Loop
+                onBoardCardView(movie: movies[movies.count - 1])
             }//: TabView
             .tabViewStyle(PageTabViewStyle()).padding(.vertical, 20)
         }

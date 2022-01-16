@@ -10,18 +10,12 @@ import SwiftUI
 struct MovieCardView: View {
     //MARK: - Properties
     var movie: Movie
-    @State private var isAnimating: Bool = false
     //MARK: - Body
     var body: some View {
         ZStack {
-            VStack() {
-                Spacer()
-                //Movie button start
-                StartButtonView().padding().background(Color.black).blendMode(.screen)
-            }//: VStack
+            Image(movie.image).resizable().scaledToFill()
         }//: ZStack
-        .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .center)
-        .background(Image(movie.image).resizable().scaledToFill()   ).cornerRadius(20).padding(.horizontal, 10)
+        .ignoresSafeArea()
     }
 }
 

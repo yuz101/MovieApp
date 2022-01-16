@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MovieAppApp: App {
+struct MovieApp: App {
     @AppStorage("onBoarding") var isonBoarding: Bool = true
     var body: some Scene {
         WindowGroup {

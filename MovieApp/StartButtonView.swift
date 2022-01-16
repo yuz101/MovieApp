@@ -12,17 +12,19 @@ struct StartButtonView: View {
     @AppStorage("onBoarding") var isonBoarding: Bool?
     //MARK: -BODY
     var body: some View {
-        Button(action: {
-           isonBoarding = false
-        }){
-            HStack(spacing: 8) {
-                Text("Start")
-                Image(systemName: "arrow.right.circle").imageScale(.large)
-            }.padding(.horizontal, 16)
-            .padding(.vertical, 10)
-            .background(Capsule().strokeBorder(Color.white, lineWidth: 1.25)).shadow(color: .white, radius: 10, x: 0.0, y: 0.0)
-        } //: BUTTON
-        .accentColor(Color.white)
+        ZStack{
+            Button(action: {
+               isonBoarding = false
+            }){
+                HStack(spacing: 8) {
+                    Text("Get Started")
+                    Image(systemName: "arrow.right.circle").imageScale(.large)
+                }.padding(.horizontal, 30)
+                .padding(.vertical, 15)
+                .background(Capsule().fill(Color.black).opacity(0.7)).shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+            } //: BUTTON
+            .accentColor(Color.white)
+        }
     }
 }
 //MARK: - PREVIEW
