@@ -18,7 +18,6 @@ struct onBoardCardView: View {
                 StartButtonView().padding(50)
             }//: VStack
         }//: ZStack
-        .ignoresSafeArea()
     }
 }
 

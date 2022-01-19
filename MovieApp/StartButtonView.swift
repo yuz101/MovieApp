@@ -1,6 +1,5 @@
 //
 //  StartButtonView.swift
-//  Fructus
 //
 //  Created by Yuru Zhou on 3/22/21.
 //
@@ -21,7 +20,7 @@ struct StartButtonView: View {
                     Image(systemName: "arrow.right.circle").imageScale(.large)
                 }.padding(.horizontal, 30)
                 .padding(.vertical, 15)
-                .background(Capsule().fill(Color.black).opacity(0.7)).shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
+                .background(Capsule().fill(Color.black).opacity(0.7))
             } //: BUTTON
             .accentColor(Color.white)
         }

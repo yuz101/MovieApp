@@ -1,6 +1,5 @@
 //
 //  MovieCardView.swift
-//  Fructus
 //
 //  Created by Yuru Zhou on 3/18/21.
 //
@@ -15,12 +14,12 @@ struct MovieCardView: View {
         ZStack {
             Image(movie.image).resizable().scaledToFill()
         }//: ZStack
-        .ignoresSafeArea()
+        
     }
 }
 
 struct MovieCardView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieCardView(movie: popularMovieData[2]).previewLayout(.fixed(width: 320, height: 640))
+        MovieCardView(movie: popularMovieData[0]).previewLayout(.fixed(width: 320, height: 640))
     }
 }

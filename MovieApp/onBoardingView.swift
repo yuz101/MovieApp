@@ -1,6 +1,5 @@
 //
 //  onBoardingView.swift
-//  Fructus
 //
 //  Created by Yuru Zhou on 3/22/21.
 //
